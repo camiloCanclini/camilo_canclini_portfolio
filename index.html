@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main_styles.css">
 </head>
 <body>
-    <nav>
+    <nav class="navbar-in-top">
         <h1>Camilo Canclini</h1>
         <ul>
             <li class="nav_item">Inicio</li>
@@ -18,17 +18,20 @@
             <li class="nav_item">Contact Me</li>
         </ul>
     </nav>
-    <main>
-        <div id="welcome_message">
-            <div>
-                <span class="welcome_message_t1">Hello World!</span>
-                <span class="welcome_message_t2">I am Web Developer</span>
-            </div>
-            <div>
-                <img src="resources/img/" alt="Camilo Img" id="welcome_message_img">
-            </div>
+    <div id="welcome_message">
+        <video src="resources/videos/welcome.mp4" playsinline autoplay muted loop>
+            <source src="resources/videos/welcome.mp4" type="video/mp4">
+        </video>
+        <div>
+            <span class="welcome_message_t1"></span>
+            <span class="welcome_message_t2">I am Web Developer</span>
         </div>
-        <div class="main_section">
+        <div>
+            <img src="resources/icons/camilo.png" alt="Camilo Img" id="welcome_message_img">
+        </div>
+    </div>
+    <main>
+    <div class="main_section">
             <div class="projects">
                 <span class="projects-t1">Projects</span>
                 <span class="projects-t2">Here are some of my works</span>
@@ -47,4 +50,5 @@
 
     </footer>
 </body>
+<script src="scripts/typingFx.js"></script>
 </html>
