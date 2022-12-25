@@ -6,18 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camilo Canclini</title>
     <link rel="stylesheet" href="css/main_styles.css">
+    <script src="https://kit.fontawesome.com/b039591234.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar-in-top">
+    <nav class="navbar-in-top" id="nav">
         <h1>Camilo Canclini</h1>
         <ul>
-            <li class="nav_item">Inicio</li>
-            <li class="nav_item">Projects</li>
-            <li class="nav_item">Skills</li>
-            <li class="nav_item">About Me</li>
-            <li class="nav_item">Contact Me</li>
+            <a href="#welcome_message" class="nav_item">
+                <li>Inicio</li>
+            </a>
+            <a href="#projects" class="nav_item">
+                <li>Projects</li>
+            </a>
+            <a href="#skills" class="nav_item">
+                <li>Skills</li>
+            </a>
+            <a href="#about-me" class="nav_item">
+                <li>About Me</li>
+            </a>
+            <a href="#contact-me" class="nav_item">
+                <li>Contact Me</li>
+            </a>                   
         </ul>
     </nav>
+    <div id="config_page">
+        <button id="config_page-arrow">
+            <i class="fa-solid fa-caret-left"></i>
+            <!-- <i class="fa-solid fa-caret-right"></i> -->
+        </button>
+        <button id="config_page-language">
+            <img src="resources/icons/eng_flag.png" alt="">
+        </button>
+        <button id="config_page-darkmode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </div>
     <div id="welcome_message">
         <video src="resources/videos/welcome.mp4" playsinline autoplay muted loop>
             <source src="resources/videos/welcome.mp4" type="video/mp4">
@@ -30,25 +53,41 @@
             <img src="resources/icons/camilo.png" alt="Camilo Img" id="welcome_message_img">
         </div>
     </div>
-    <main>
-    <div class="main_section">
-            <div class="projects">
-                <span class="projects-t1">Projects</span>
-                <span class="projects-t2">Here are some of my works</span>
-                <div class="projects-container">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
+    <main id="projects">
+    <div class="sections">
+        <div class="sections_titles">
+            <div class="sections_t1">Projects</div>
+            <div class="sections_t2">Here are some of my works...</div>
+        </div>
+        <div class="sections_info-box">
+            <div class="item">
+                <img src="" alt="">
+                <div>
+                    <div>WebPage to Rent Sports Fields</div>
+                    <div>
+                        This is a landing page for a fictitious agreement  it has integreted an admin system with ABM for interact with a database. This allow the admin loads the information of the customer encounters.
+                    </div>
+                    <div>
+                        <span></span>
+                        <span>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </span>
+                    </div>
                 </div>
             </div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
         </div>
+    </div>
     </main>
     <footer>
 
     </footer>
 </body>
 <script src="scripts/typingFx.js"></script>
+<script src="scripts/nav_fx.js"></script>
 </html>
