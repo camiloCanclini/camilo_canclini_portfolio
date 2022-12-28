@@ -1,8 +1,9 @@
 let nav = document.getElementById("nav");
-console.log(nav);
+
+//console.log(nav);
 let buttons_config = document.getElementById("config_page");
 let btn_config_childrens = buttons_config.children;
-console.log(buttons_config);
+//console.log(buttons_config);
 let arrow_btn = btn_config_childrens[0];
 let language_btn = btn_config_childrens[1];
 let darkmode_btn = btn_config_childrens[2];
@@ -11,11 +12,11 @@ window.addEventListener("scroll",()=>{
     nav.classList.toggle("navbar-scrolled",window.scrollY>100);
     buttons_config.classList.toggle("config_page-scrolled",window.scrollY>100);
 });
-console.log(arrow_btn);
+//console.log(arrow_btn);
 arrow_btn.addEventListener("click",()=>{
     buttons_config.classList.toggle("config_page-open");
     let actual_ico = arrow_btn.firstElementChild
-    console.log('actual_ico:', actual_ico)
+    //console.log('actual_ico:', actual_ico)
     const arrow_left_ico = "fa-caret-left"
     const arrow_right_ico = "fa-caret-right"  
     if (actual_ico.classList.replace(arrow_left_ico, arrow_right_ico) == false) {

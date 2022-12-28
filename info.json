@@ -1,0 +1,18 @@
+{
+    "english":{   
+        "navbar":[
+            "home",
+            "Projects",
+            "Skills",
+            "About me",
+            "Contact Me"
+        ],
+        "welcome":{
+            
+        }
+    },
+    "spanish":{
+
+    }   
+    
+}
