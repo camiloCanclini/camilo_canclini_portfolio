@@ -1,4 +1,4 @@
-let speed = 400;
+let speed = 200;
 let i = 0, j = 0;
 let textWrited = false;
 let text = "Hello World!";
