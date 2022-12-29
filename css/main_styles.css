@@ -74,7 +74,7 @@ nav > ul{
     margin: 0 .3em;
     background-color: transparent;
     border: rgba(255, 255, 255, 0.1) 0px solid;
-    font-size: 1.5em;
+    font-size: 1.65em;
     text-decoration: none;
     transition-duration: .2s;
     transition-property: background-color border;
@@ -218,11 +218,11 @@ svg path{
     margin: 3em 0em;
 }
 .sections_t1{
-    font-size: 4rem;
+    font-size: 5rem;
     margin-bottom: .2em;
 }
 .sections_t2{
-    font-size: 2rem;
+    font-size: 3rem;
     font-style: italic;
     margin-bottom: 2em;
 }
@@ -274,10 +274,10 @@ svg path{
     margin: .3em;
     box-sizing: border-box;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 2em;
 } 
 .sections_info-box > .item > .texts .texts-info{
-    font-size: 1.2em;
+    font-size: 1.45em;
     padding: 1em;
     box-sizing: border-box;
 }
@@ -315,7 +315,7 @@ svg path{
 }
 .skills > .item > .titles{
     position: relative;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     padding: .4em;
     letter-spacing: 10px;
     text-align: center;
@@ -357,11 +357,11 @@ svg path{
 }
 .technologies-item > span{
     margin-bottom: 1em;
-    font-size: 1em;
+    font-size: 1.6em;
 }
 .technologies-item > i{
     width: min-content;
-    font-size: 3em;
+    font-size: 5em;
     transition: .5s color;
 }
 i{
@@ -440,7 +440,8 @@ i{
     font-size: 3rem;
 }
 .about-me > .resume > .texts > .biography{
-    font-size: 1.6em;
+    font-size: 2.6em;
+    padding: 0 5em;
 }
 .about-me > .studies > .item{
     border-radius: 1em;
@@ -459,7 +460,7 @@ i{
     z-index: 2;
 }
 .about-me > .studies > .item > .titles{
-    font-size: 3rem;
+    font-size: 4rem;
     letter-spacing: 10px;
     display: flex;
     align-items: center;
@@ -469,7 +470,8 @@ i{
     margin-left: auto;
 }
 .about-me > .studies > .item > p{
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    padding: 0 4em;
 }
 
 .about-me > .studies > .item > img{
@@ -501,7 +503,7 @@ i{
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-size: 1.3em;
+    font-size: 1.8em;
 }
 .about-me > .studies > .item > .topics > .topics-item > span{
     flex-basis: 0;
@@ -529,6 +531,7 @@ i{
     flex-grow: 1;
     text-align: center;
     text-decoration: none;
+    font-size: 1.5em;
     transition: .3s all;
 }
 
@@ -569,12 +572,12 @@ i{
 }
 .contact-me > form label{
     margin-bottom: .8em;
-    font-size: 1.4em;
+    font-size: 1.8em;
     letter-spacing: .5em;
 }
 .contact-me > form input, .contact-me > form textarea{
     min-height: 50px;
-    font-size: 1.4em;
+    font-size: 2em;
     background-color: rgba(255, 255, 255, 0.019);
     border: none;
     border-radius: .4em;
@@ -586,6 +589,7 @@ i{
 }
 .contact-me > form > .box-input-extended textarea{
     width: 100% !important;
+    max-height: 40vh;
     box-sizing: border-box;
 }
 .contact-me > form > input[type="submit"]{
