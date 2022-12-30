@@ -1,12 +1,12 @@
 let carousel_container = document.querySelectorAll('.projects_img-carousel > button');
-console.log('carousel_container:', carousel_container)
+//console.log('carousel_container:', carousel_container)
 
 carousel_container.forEach(button => {
 	//Agregar listener
-    console.log('boton:', button)
+    //console.log('boton:', button)
 	button.addEventListener("click", function (event) {
         // Recuerda, this es el elemento
-        console.log(this);
+        //console.log(this);
         let buttonDirection = this.className;
         parentContainer = this.parentNode;
         let pos_value = parseInt(parentContainer.getAttribute("pos"));
@@ -36,9 +36,5 @@ carousel_container.forEach(button => {
                 imgs[new_pos].style.opacity = 1;
             }
         }
-        console.log(parentContainer.getAttribute("pos")); 
-        //this.innerHTML = "hola";
-        console.log('this:', parentContainer)  
-        console.log('this:', this)  
     });
 });

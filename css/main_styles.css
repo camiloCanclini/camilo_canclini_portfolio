@@ -162,7 +162,7 @@ W E L C O M E    M E S S A G E
     *height: calc(100vh - var(--nav-bar-height));
     height: 100vh;
     *margin-top: var(--nav-bar-height);
-    *padding: 2em;
+    padding: 2em;
     *position: absolute;
 }
 #welcome_message > video{
@@ -183,11 +183,38 @@ W E L C O M E    M E S S A G E
     position: relative;
     flex-grow: 1;
     flex-basis: 0;
-    height: 50vh;
+    height: 45vh;
     text-align: center;
 }
 .welcome_message_t1{
-    font-size: 7em;
+    font-size: 8em;
+}
+.welcome_message_t1::after{
+    padding-left: .2em;
+    content: "";
+    *opacity: 1;
+    border-right: 10px solid rgba(255, 255, 255, 0.808);
+    animation-name: writingFxCursor;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes writingFxCursor {
+    0%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .welcome_message_t2{
     font-size: 5em;
