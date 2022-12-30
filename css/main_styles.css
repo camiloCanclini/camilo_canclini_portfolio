@@ -187,7 +187,7 @@ W E L C O M E    M E S S A G E
     text-align: center;
 }
 .welcome_message_t1{
-    font-size: 8em;
+    font-size: 7em;
 }
 .welcome_message_t1::after{
     padding-left: .2em;
@@ -252,11 +252,11 @@ svg path{
     margin-top: 6em;
 }
 .sections_t1{
-    font-size: 5rem;
+    font-size: 5em;
     margin-bottom: .2em;
 }
 .sections_t2{
-    font-size: 3rem;
+    font-size: 3em;
     font-style: italic;
     margin-bottom: 2em;
 }
@@ -271,16 +271,13 @@ svg path{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    min-height: 100vh;
     padding: 0 5em;
 }
 .sections_info-box > .item{
-    flex-basis: 0;
-    flex-grow: 1;
     display: flex;
+    flex-wrap: wrap;
     margin: 1em;
-    min-height: 40vh;
+    min-height: 50vh;
     background-color: var(--secondary-color);
     border-radius: 2em;
     box-sizing: border-box;
@@ -289,8 +286,8 @@ svg path{
 }
 
 .sections_info-box > .item > *{
-    height: 100%;
-    width: 40%;
+    flex-basis: 0;
+    flex-grow: 1;
     box-sizing: border-box;
 }
 .projects_img-carousel{
@@ -309,16 +306,17 @@ svg path{
     border: none;
     opacity: 0;
     transition: .2s opacity ease-in-out;
+    font-size: 6em;
+    text-shadow: 0px 2px 24px rgba(0, 0, 0, 0.204);
 }
 .sections_info-box > .item > .projects_img-carousel > button.right{
     right: 0;
     margin: auto .2em;
-    font-size: 3em;
+    
 }
 .sections_info-box > .item > .projects_img-carousel > button.left{
     left: 0;
     margin: auto .2em;
-    font-size: 3em;
 }
 .sections_info-box > .item > .projects_img-carousel > img{
     position: absolute;
@@ -342,7 +340,7 @@ svg path{
     flex-direction: column;
     justify-content: stretch;
     padding: 1em;
-    flex-grow: 1;
+    min-width: 40%;
 }
 .sections_info-box > .item > .texts > *{
     flex-basis: 0;
@@ -351,10 +349,12 @@ svg path{
     margin: .3em;
     box-sizing: border-box;
     text-align: center;
-    font-size: 2em;
+    font-size: 3.4em;
 } 
 .sections_info-box > .item > .texts .texts-info{
     flex-grow: 1;
+    display: flex;
+    align-items: center;
     padding: 1em;
     box-sizing: border-box;
     font-size: 1.8em;
@@ -415,7 +415,7 @@ svg path{
 }
 .skills > .item > .titles{
     position: relative;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     padding: .4em;
     letter-spacing: 10px;
     text-align: center;
@@ -543,11 +543,11 @@ i{
     transform: scale(1.02);
 }
 .about-me > .resume > .texts > .title{
-    font-size: 3rem;
+    font-size: 3em;
 }
 .about-me > .resume > .texts > .biography{
     font-size: 2.6em;
-    padding: 0 5em;
+    padding: 0 1.4em;
 }
 .about-me > .studies > .item{
     border-radius: 1em;
@@ -562,11 +562,11 @@ i{
 }
 .about-me > .studies > .item > *{
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     z-index: 2;
 }
 .about-me > .studies > .item > .titles{
-    font-size: 4rem;
+    font-size: 4em;
     letter-spacing: 10px;
     display: flex;
     align-items: center;
@@ -577,7 +577,7 @@ i{
 }
 .about-me > .studies > .item > p{
     margin: 3em 0;
-    font-size: 2.2rem;
+    font-size: 2.2em;
     text-align: center;
     padding: 0 4em;
 }
@@ -723,6 +723,7 @@ i{
     background-color: #fff;
     border: 1px solid white;
 }
+
 /*
 
  S E C T I O N S | F O O T E R 
@@ -792,4 +793,139 @@ footer > .footer-item > .info-text > div{
 }
 footer > .footer-item > .info-text > div > *{
     margin: .8em .6em;
+}
+
+/*
+
+ R E S P O N S I V E   D E S I G N 
+
+*/
+
+
+/*
+
+T A B L E T
+
+*/
+@media screen and (max-width: 1400px){
+    html{
+        font-size: 10px;
+    }
+    #welcome_message{
+        flex-direction: column-reverse;
+        padding: 15em 5em;
+    }
+    #welcome_message_img{
+        height: 70%;
+    }
+    #welcome_t1{
+        font-size: 6em;
+    }
+    #projects > div > .sections_titles{
+        font-size: 16px;
+    }
+    #projects > div > .sections_titles > .sections_t2{
+        font-size: 2.2em;
+    }
+    .sections_info-box > .item{
+        flex-direction: column;
+        min-height: 90vh;
+    }
+    .sections_info-box > .item > *{
+        width: 100%;
+    }
+    .sections_info-box > .item > .projects_img-carousel > button{
+        font-size: 10em;
+    }
+    .sections_info-box > .item > .texts{
+        font-size: 14px;
+    }
+    .sections_info-box > .item > .texts > .texts-info{
+        display: flex;
+        align-items: center;
+    }
+    .sections_info-box > .item > .texts > .texts-icons{
+        font-size: 1.7em;
+    }
+    .skills{
+        font-size: 14px;
+        flex-wrap: wrap;
+        max-height: min-content;
+    }
+    .skills > *{
+        min-width: 30vw;
+    }
+    #about-me > div.about-me > div.resume{
+        flex-direction: column-reverse;
+        padding: 3em;
+        min-height: 80vh;
+    }
+    #about-me > div.about-me > div.resume > *{
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    #about-me > div.about-me > div.resume > img{
+        width: 60%;
+        max-height: 70vh;
+    }
+    #about-me > div.about-me > div.resume > .texts > .biography{
+        padding: 1em;
+    }
+    #about-me > div.about-me > div.studies > .item{
+        font-size: 11px;
+
+    }
+    #about-me > div.about-me > div.studies > .item > .titles{
+        display: flex;
+        text-align: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        font-size: 3em;
+    }
+    #about-me > div.about-me > div.studies > .item > .titles > img{
+        width: 30%;
+        object-fit: contain;
+        margin: 0;
+    }
+    #about-me > div.about-me > div.studies > .item > p{
+        padding: 0;
+        margin: 1em 0;
+    }
+    .contact-me > form{
+        flex-direction: column;
+    }
+    .contact-me > form > *{
+        width: 100%;
+        margin: 2em 0;
+    }
+    .contact-me > form input, .contact-me > form textarea{
+        padding: 1.6em .8em;
+    }
+    footer{
+        flex-direction: column;
+        font-size: 20px;
+        padding: 1em 10%;
+    }
+    footer > .footer-item{
+        margin: 2em .6em;
+    }
+    footer > .footer-item > .info-text{
+        font-size: 1.5em;
+    }
+    footer > .footer-item > .info-text a{
+        font-size: 1.5em;
+        margin: .2em 1em;
+    }
+    .footer-item:nth-child(1){
+        order: 1;
+    }
+    .footer-item:first-child > .info-text{
+        flex-direction: row;
+    }
+    
+}
+@media screen and (max-width: 767px){
+    html{
+        font-size: 8px;
+    }
 }
