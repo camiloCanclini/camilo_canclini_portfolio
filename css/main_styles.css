@@ -29,6 +29,7 @@ nav{
     z-index: 10;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     right: 0;
@@ -48,10 +49,14 @@ nav{
     transition: 1s background-color;
     background-color: rgb(0, 0, 0);
 }
+nav > *{
+    flex-grow: 1;
+}
 nav > h1{
     margin: 0;
     letter-spacing: .2em;
     font-size: 2.5em;
+    text-align: center;
 }
 nav > ul{
     display: flex;
@@ -59,7 +64,6 @@ nav > ul{
     justify-content: space-evenly;
     margin: 0;
     padding: 0;
-    margin-left: auto;
     height: 100%;
     width: 60%;
 }
@@ -144,7 +148,7 @@ B U T T O N S  N A V (CONFIG)
 }
 #config_page-language > img{
     object-fit: contain;
-    width: 80%;
+    height: 80%;
 }
 /*
 
@@ -191,8 +195,11 @@ W E L C O M E    M E S S A G E
 #welcome_message_img{
     object-fit: contain;
     filter: drop-shadow(10px 10px 2px rgba(0, 0, 0, 0.213));
-    width: 100%;
+    *width: 100%;
     height: 100%;
+    padding: 1em;
+    border: 5px double white;
+    border-radius: 50%;
 }
 svg path{
     width: 100%;
@@ -215,7 +222,7 @@ svg path{
 }
 .sections_titles{
     padding: 0em 4em;
-    margin: 3em 0em;
+    margin-top: 6em;
 }
 .sections_t1{
     font-size: 5rem;
@@ -477,7 +484,7 @@ i{
 */
 
 .about-me{
-    padding: 20px;
+    padding: 0px;
 }
 
 .about-me > .resume{
@@ -501,6 +508,12 @@ i{
     min-width: 30%;
     height: 100%;
     object-fit: contain;
+    border: 1px solid white;
+    border-radius: 30px;
+    transition: .5s transform;
+}
+.about-me > .resume > img:hover{
+    transform: scale(1.02);
 }
 .about-me > .resume > .texts > .title{
     font-size: 3rem;
