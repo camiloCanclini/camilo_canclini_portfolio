@@ -350,6 +350,9 @@ svg path{
     opacity: 0;
     transition: .6s opacity;
 }
+.sections_info-box > .item:hover > .projects_img-carousel > img:first-child{
+    opacity: 1;
+}
 .sections_info-box > .item:hover > .projects_img-carousel > button{
     opacity: 1;
 }
