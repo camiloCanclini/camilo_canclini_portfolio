@@ -321,22 +321,24 @@
                 <div class="sections_t2">Send me a message...</div>
             </div>
             <div class="contact-me" data-aos="zoom-in">
-                <form action="">
+                <form action="https://formsubmit.co/camilocanclini@gmail.com" method="POST" >
+                    <!-- <input type="hidden" name="_template" value="box"> -->
+                    <input type="hidden" name="_next" value="https://camilocanclini.github.io/camilo_canclini_portfolio/">
                     <div class="box-input">
                         <label for="">Name</label>
-                        <input type="text">
+                        <input type="text" name="name" placeholder="Camilo Canclini" required>
                     </div>
                     <div class="box-input">
                         <label for="">Email</label>
-                        <input type="email">
+                        <input type="email" name="email" placeholder="youremail@gmail.com" required>
                     </div>
                     <div class="box-input-extended">
-                        <label for="">Affair</label>
-                        <input type="text">
+                        <label for="">Subject</label>
+                        <input type="text" name="_subject" placeholder="I Wanna Say You Somenthing..." required>
                     </div>
                     <div class="box-input-extended">
                         <label for="">Message</label>
-                        <textarea name=""></textarea>
+                        <textarea name="message" required placeholder="Hey This Page is Amazing! I'll like to know more about you"></textarea>
                     </div>
                     <input type="submit" value="SEND">
                 </form>
