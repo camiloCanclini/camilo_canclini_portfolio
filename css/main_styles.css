@@ -184,10 +184,11 @@ W E L C O M E    M E S S A G E
     flex-grow: 1;
     flex-basis: 0;
     height: 45vh;
+    padding: 2em;
     text-align: center;
 }
 .welcome_message_t1{
-    font-size: 7em;
+    font-size: 5em;
 }
 .welcome_message_t1::after{
     padding-left: .2em;
@@ -228,9 +229,16 @@ W E L C O M E    M E S S A G E
     border: 5px double white;
     border-radius: 50%;
 }
+svg{
+    display: block;
+    position: relative;
+    top: 10px;
+    background-color: transparent;   
+}
 svg path{
     width: 100%;
     height: 100%;
+    background-color: #000;
 }
 /*
 
@@ -823,6 +831,7 @@ T A B L E T
     }
     #projects > div > .sections_titles{
         font-size: 16px;
+        padding: 0;
     }
     #projects > div > .sections_titles > .sections_t2{
         font-size: 2.2em;
@@ -830,25 +839,30 @@ T A B L E T
     .sections_info-box > .item{
         flex-direction: column;
         min-height: 90vh;
+        margin-top: 3em;
     }
     .sections_info-box > .item > *{
         width: 100%;
+        
     }
     .sections_info-box > .item > .projects_img-carousel > button{
         font-size: 10em;
     }
     .sections_info-box > .item > .texts{
         font-size: 14px;
+        justify-content: center;
     }
     .sections_info-box > .item > .texts > .texts-info{
         display: flex;
         align-items: center;
+        padding: 0 1em;
     }
     .sections_info-box > .item > .texts > .texts-icons{
         font-size: 1.7em;
     }
     .skills{
-        font-size: 14px;
+        padding: 0;
+        font-size: 18px;
         flex-wrap: wrap;
         max-height: min-content;
     }
@@ -870,9 +884,10 @@ T A B L E T
     }
     #about-me > div.about-me > div.resume > .texts > .biography{
         padding: 1em;
+        font-size: 4em;
     }
     #about-me > div.about-me > div.studies > .item{
-        font-size: 11px;
+        font-size: 16px;
 
     }
     #about-me > div.about-me > div.studies > .item > .titles{
@@ -893,24 +908,36 @@ T A B L E T
     }
     .contact-me > form{
         flex-direction: column;
+        font-size: 14px;
     }
     .contact-me > form > *{
         width: 100%;
-        margin: 2em 0;
+        margin: .6em 0;
     }
     .contact-me > form input, .contact-me > form textarea{
         padding: 1.6em .8em;
     }
     footer{
         flex-direction: column;
-        font-size: 20px;
+        font-size: 15px;
         padding: 1em 10%;
     }
     footer > .footer-item{
         margin: 2em .6em;
+        box-sizing: border-box;
+        width: 100%;
     }
     footer > .footer-item > .info-text{
         font-size: 1.5em;
+        padding: 0 3em;
+        margin: 2em 0;
+        box-sizing: border-box;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    footer > .footer-item > .info-text > div{
+        justify-content: center;
     }
     footer > .footer-item > .info-text a{
         font-size: 1.5em;
@@ -926,6 +953,174 @@ T A B L E T
 }
 @media screen and (max-width: 767px){
     html{
+        font-size: 10px;
+    }
+    #welcome_message{
+        flex-direction: column-reverse;
+        padding: 2em 5em;
+    }
+    #welcome_message_img{
+        height: 70%;
+    }
+    #welcome_t1{
+        font-size: 3.5em;
+    }
+    #projects > div > .sections_titles{
         font-size: 8px;
+        text-align: center;
+    }
+    #projects > div > .sections_titles > .sections_t2{
+        font-size: 1.6em;
+    }
+    .sections_info-box{
+        padding: 0;
+    }
+    .sections_info-box > .item{
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+        min-height: 90vh;
+        margin-top: 3em;
+    }
+    .sections_info-box > .item > *{
+        width: 100%;
+        
+    }
+    .sections_info-box > .item > .projects_img-carousel > button{
+        font-size: 6em;
+    }
+    .sections_info-box > .item > .texts{
+        font-size: 10px;
+        justify-content: center;
+    }
+    .sections_info-box > .item > .texts > .texts-info{
+        display: flex;
+        align-items: center;
+        padding: 0 1em;
+    }
+    .sections_info-box > .item > .texts > .texts-icons{
+        font-size: 1.7em;
+    }
+    .skills{
+        font-size: 12px;
+        flex-wrap: wrap;
+        max-height: min-content;
+        flex-direction: column;
+    }
+    .skills > .item{
+        min-width: 30vw;
+        flex-basis: auto;
+        min-height: auto;
+    }
+    #about-me > div.about-me > div.resume{
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 1em;
+        min-height: 80vh;
+    }
+    #about-me > div.about-me > div.resume > *{
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    #about-me > div.about-me > div.resume > img{
+        width: 60%;
+        max-height: 70vh;
+    }
+    #about-me > div.about-me > div.resume > .texts > .biography{
+        padding: 1em;
+        font-size: 2em;
+    }
+    #about-me > div.about-me > div.studies > .item{
+        font-size: 8px;
+        padding: 1em;
+
+    }
+    #about-me > div.about-me > div.studies > .item > .titles{
+        display: flex;
+        text-align: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        font-size: 3em;
+    }
+    #about-me > div.about-me > div.studies > .item > .titles > img{
+        width: 60%;
+        object-fit: contain;
+        margin: 0;
+    }
+    #about-me > div.about-me > div.studies > .item > p{
+        padding: 0;
+        margin: 1em 0;
+    }
+    #about-me > div.about-me > div.studies > div.item > div.topics{
+        padding: 1em;
+        flex-direction: column;
+        
+    }
+    #about-me > div.about-me > div.studies > div.item > div.topics > div > img{
+        height: 150px;
+        margin: 2em 0;
+        box-sizing: border-box;
+    }
+    #about-me > div.about-me > div.studies > div > div.links{
+        display: flex;
+        flex-direction: column;
+    }
+    #about-me > div.about-me > div.studies > div > div.links > a{
+        display: flex;
+        align-items: center;
+        margin: 1em 0;
+        height: 30px;
+    }
+    .contact-me{
+        padding: 0;
+    }
+    .contact-me > form{
+        flex-direction: column;
+        font-size: 8px;
+    }
+    .contact-me > form > *{
+        width: 100%;
+        margin: .6em 0;
+    }
+    #contact-me > div.contact-me.aos-init.aos-animate > form > div > textarea{
+        min-height: 200px;
+    }
+    .contact-me > form input, .contact-me > form textarea{
+        padding: 1.6em .8em;
+        
+    }
+
+    footer{
+        flex-direction: column;
+        font-size: 8px;
+        padding: 1em 0;
+        width: 100%;
+    }
+    footer > .footer-item{
+        margin: 2em 0;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    footer > .footer-item > .info-text{
+        font-size: 2em;
+        padding: 0 1.4em;
+        margin: 2em 0;
+        box-sizing: border-box;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    footer > .footer-item > .info-text > div{
+        justify-content: center;
+    }
+    footer > .footer-item > .info-text a{
+        font-size: 1.5em;
+        margin: .2em 1em;
+    }
+    .footer-item:nth-child(1){
+        order: 1;
+    }
+    .footer-item:first-child > .info-text{
+        flex-direction: row;
     }
 }
