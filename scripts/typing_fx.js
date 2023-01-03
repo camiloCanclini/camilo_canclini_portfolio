@@ -1,5 +1,5 @@
 let originalSpeed = 100;
-let delaySpeed = 2000
+let delaySpeed = 1000
 let speed = 0;
 let array_pos = -1
 let letter_pos = 0;

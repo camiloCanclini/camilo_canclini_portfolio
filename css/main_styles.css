@@ -188,6 +188,46 @@ W E L C O M E    M E S S A G E
     right: 0;
     bottom: 0;
 }
+#welcome_message > .cv_button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: min-content;
+    margin: 0 auto;
+    padding: .6em;
+    border-radius: .5em;
+    border: 1px solid white;
+    right: 0;
+    left: 0;
+    bottom: 5vh;
+    z-index: 1;
+    font-size: 3em;
+    text-decoration: none;
+    transition-duration: .6s;
+    transition-property: background-color color;
+    scale: 0;
+    animation-name: cv;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 15s;
+    animation-duration: 1s;
+}
+@keyframes cv {
+    from{
+        scale: 0;
+    }
+    to{
+        scale: 1;
+    }
+}
+#welcome_message > .cv_button:hover, #welcome_message > .cv_button:hover > i{
+    background-color: #fff;
+}
+#welcome_message > .cv_button:hover > i{
+    color: #000;
+}
 #welcome_message > div{
     display: flex;
     flex-direction: column;
