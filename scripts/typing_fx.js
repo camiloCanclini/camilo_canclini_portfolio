@@ -53,12 +53,12 @@ function writingFx(){
         deleting = false
         
         array_pos++;
-        console.log('empezando a escribir palabra');
+        //console.log('empezando a escribir palabra');
     }
     if (writing == true && currentText.length <= letter_pos) {
         currentText.push(texts[array_pos].charAt(letter_pos))
         letter_pos++
-        console.log("writing: ", currentText);
+        //console.log("writing: ", currentText);
         if (letter_pos == texts[array_pos].length) {
             speed = delaySpeed;
         }
@@ -68,7 +68,7 @@ function writingFx(){
         writing = false
         letter_pos--
         currentText.pop()
-        console.log("deleting: ", currentText);
+        //console.log("deleting: ", currentText);
         if (letter_pos == 0) {
             speed = delaySpeed;
         }
@@ -76,13 +76,13 @@ function writingFx(){
     if (currentText.length == texts[array_pos].length) {//Frase Terminada, borrando
         writing = false
         deleting = true
-        console.log('empezando a borrar');
+        //console.log('empezando a borrar');
     }
     if (array_pos == texts.length-1 && writing == false && deleting == true){
         array_pos = 0 // volvemos al inicio con los textos
     }
     //console.log('array_pos:', array_pos)
-    console.log("loop", letter_pos, array_pos);
+    //console.log("loop", letter_pos, array_pos);
     display_text.innerHTML = currentText.join('')
     setTimeout(writingFx, speed)
 }

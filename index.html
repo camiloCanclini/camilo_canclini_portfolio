@@ -10,25 +10,55 @@
     <script src="https://kit.fontawesome.com/b039591234.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- <div class="menu_responsive closed" id="menu-responsive">
+        <a href="#welcome_message" class="nav_item">Home</a>
+        <a href="#projects" class="nav_item">Projects</a>
+        <a href="#skills" class="nav_item">Skills</a>
+        <a href="#about-me" class="nav_item">About Me</a>
+        <a href="#contact-me" class="nav_item">Contact Me</a>
+        <button id="nav-responsive-btn-cross"><i class="fa-solid fa-circle-xmark"></i></button>  
+    </div> -->
     <nav class="navbar-in-top" id="nav">
-        <h1>Camilo Canclini</h1>
-        <ul>
-            <a href="#welcome_message" class="nav_item">
-                <li>Home</li>
-            </a>
-            <a href="#projects" class="nav_item">
-                <li>Projects</li>
-            </a>
-            <a href="#skills" class="nav_item">
-                <li>Skills</li>
-            </a>
-            <a href="#about-me" class="nav_item">
-                <li>About Me</li>
-            </a>
-            <a href="#contact-me" class="nav_item">
-                <li>Contact Me</li>
-            </a>                   
-        </ul>
+        <div class="menu">
+            <h1>Camilo Canclini</h1>
+            <ul>
+                <a href="#welcome_message" class="nav_item">
+                    <li>Home</li>
+                </a>
+                <a href="#projects" class="nav_item">
+                    <li>Projects</li>
+                </a>
+                <a href="#skills" class="nav_item">
+                    <li>Skills</li>
+                </a>
+                <a href="#about-me" class="nav_item">
+                    <li>About Me</li>
+                </a>
+                <a href="#contact-me" class="nav_item">
+                    <li>Contact Me</li>
+                </a>                   
+            </ul>
+        </div>
+        <div class="responsive-menu" id="responsive-menu">
+            <ul>
+                <a href="#welcome_message" class="nav_item">
+                    <li>Home</li>
+                </a>
+                <a href="#projects" class="nav_item">
+                    <li>Projects</li>
+                </a>
+                <a href="#skills" class="nav_item">
+                    <li>Skills</li>
+                </a>
+                <a href="#about-me" class="nav_item">
+                    <li>About Me</li>
+                </a>
+                <a href="#contact-me" class="nav_item">
+                    <li>Contact Me</li>
+                </a>
+            </ul>
+            <button id="menu-responsive-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>                   
+        </div>
     </nav>
     <div id="config_page">
         <button id="config_page-arrow">
@@ -474,6 +504,7 @@
 </body>
 <script src="scripts/typing_fx.js"></script>
 <script src="scripts/nav_fx.js"></script>
+<script src="scripts/responsive_menu.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
