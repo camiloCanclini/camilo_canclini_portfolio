@@ -241,7 +241,7 @@ W E L C O M E    M E S S A G E
     text-align: center;
 }
 .welcome_message_t1{
-    font-size: 5em;
+    font-size: 4em;
 }
 .welcome_message_t1::after{
     padding-left: .2em;
@@ -301,23 +301,24 @@ svg path{
 .main{
     min-height: 100vh;
     margin: 10vh 0;
-    padding: 1em;
+    padding: 0 8vw;
     *box-shadow: inset 1px 1px 20px 10px rgba(172, 177, 255, 0.05);
 }.sections{
     box-sizing: border-box;
     padding: 1em;
-    
+    align-items: center;
+    justify-content: center;
 }
 .sections_titles{
     padding: 0em 4em;
     margin-top: 10em;
 }
 .sections_t1{
-    font-size: 5em;
+    font-size: 4em;
     margin-bottom: .2em;
 }
 .sections_t2{
-    font-size: 3em;
+    font-size: 2.5em;
     font-style: italic;
     margin-bottom: 2em;
 }
@@ -331,6 +332,7 @@ svg path{
 .sections_info-box{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 0 5em;
 }
@@ -338,7 +340,8 @@ svg path{
     display: flex;
     flex-wrap: wrap;
     margin: 1em;
-    min-height: 50vh;
+    min-height: 35vh;
+    width: 80%;
     background-color: var(--secondary-color);
     border-radius: 2em;
     box-sizing: border-box;
@@ -353,7 +356,8 @@ svg path{
 }
 .projects_img-carousel{
     position: relative;
-    background-color: #000;
+    background-color: var(--secondary-color);
+    
     z-index: 1;
 }
 .sections_info-box > .item > .projects_img-carousel > button{
@@ -367,7 +371,7 @@ svg path{
     border: none;
     opacity: 0;
     transition: .2s opacity ease-in-out;
-    font-size: 6em;
+    font-size: 4em;
     text-shadow: 0px 2px 24px rgba(0, 0, 0, 0.204);
 }
 .sections_info-box > .item > .projects_img-carousel > button.right{
@@ -390,17 +394,18 @@ svg path{
     height: 100%;
     object-fit: cover;
     filter: grayscale(1);
-    box-shadow: inset 0px 0px 20px 20px black;
+    
     transition: filter 500ms ease-in-out;
 }
 .sections_info-box > .item > .projects_img-carousel > img:first-child{
+    
     z-index: 2;
 }
 .sections_info-box > .item > .texts{
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    padding: 1em;
+    padding: 1.3em;
     min-width: 40%;
 }
 .sections_info-box > .item > .texts > *{
@@ -410,7 +415,7 @@ svg path{
     margin: .3em;
     box-sizing: border-box;
     text-align: center;
-    font-size: 3.4em;
+    font-size: 2.4em;
 } 
 .sections_info-box > .item > .texts .texts-info{
     flex-grow: 1;
@@ -418,12 +423,13 @@ svg path{
     align-items: center;
     padding: 1em;
     box-sizing: border-box;
-    font-size: 1.8em;
+    font-size: 1.4em;
 }
 .sections_info-box > .item > .texts > .texts-icons{
     display: flex;
     align-items: center;
-    padding: 0 1em;
+    margin-top: 1em;
+    padding: 1em;
     max-height: fit-content;
 }
 .sections_info-box > .item > .texts > .texts-icons i{
@@ -433,7 +439,7 @@ svg path{
 }
 .sections_info-box > .item > .texts > .texts-icons > .link-repo{
     margin-left: auto;
-    font-size: 2em;
+    font-size: 1.4em;
 }
 
 /* E F F E C T S*/
@@ -461,7 +467,8 @@ svg path{
     flex-direction: row;
     justify-content: space-evenly;
     padding: 20px;
-    min-height: 70vh;
+    width: 60vw;
+    margin: auto;
 }
 .skills > .item{
     display: inline-flex;
@@ -471,13 +478,13 @@ svg path{
     min-height: 28vh;
     flex-basis: 0;
     flex-grow: 1;
-    margin: 2em 0;
+    margin: 1em 0;
     padding: .2em;
 }
 .skills > .item > .titles{
     position: relative;
-    font-size: 2.5em;
-    padding: .4em;
+    font-size: 1.8em;
+    padding: .2em;
     letter-spacing: 10px;
     text-align: center;
     width: 100%;
@@ -511,18 +518,18 @@ svg path{
     align-items: center;
     flex-basis: 0;
     *flex-grow: 1;
-    margin: 2em;
+    margin: 3.6em;
     *background-color: #333;
     box-sizing: border-box;
     text-align: center;
 }
 .technologies-item > span{
     margin-bottom: 1em;
-    font-size: 1.6em;
+    font-size: 1.2em;
 }
 .technologies-item > i{
     width: min-content;
-    font-size: 5em;
+    font-size: 3em;
     transition: .5s color;
 }
 i{
@@ -573,6 +580,12 @@ i{
 
 .about-me{
     padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    margin: auto;
 }
 
 .about-me > .resume{
@@ -580,8 +593,9 @@ i{
     align-items: center;
     flex-direction: row-reverse;
     min-height: 30vh;
-    margin: 60px;
-    padding: 1.4em;
+    width: 70vw;
+    margin: 2em;
+    padding: 2em;
     box-sizing: border-box;
     border: 1px solid white;
     border-radius: 1em;
@@ -603,17 +617,23 @@ i{
 .about-me > .resume > img:hover{
     transform: scale(1.02);
 }
+.about-me > .resume > .texts{
+    display: flex;
+    justify-content: center;
+}
 .about-me > .resume > .texts > .title{
-    font-size: 3em;
+    font-size: 2em;
 }
 .about-me > .resume > .texts > .biography{
-    font-size: 2.6em;
-    padding: 0 1.4em;
+    font-size: 1.5em;
+    width: 90%;
+    line-height: 1.8em;
 }
 .about-me > .studies > .item{
     border-radius: 1em;
-    margin: 4em 0;
-    padding: 3em;
+    margin: 3em 0;
+    padding: 4em 6em;
+    min-height: 40vh;
     position: relative;
     overflow: hidden;
 }
@@ -623,11 +643,11 @@ i{
 }
 .about-me > .studies > .item > *{
     position: relative;
-    font-size: 1.2em;
+    font-size: 1em;
     z-index: 2;
 }
 .about-me > .studies > .item > .titles{
-    font-size: 4em;
+    font-size: 3em;
     letter-spacing: 10px;
     display: flex;
     align-items: center;
@@ -638,7 +658,7 @@ i{
 }
 .about-me > .studies > .item > p{
     margin: 3em 0;
-    font-size: 2.2em;
+    font-size: 1.5em;
     text-align: center;
     padding: 0 4em;
 }
@@ -672,7 +692,7 @@ i{
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-size: 1.8em;
+    font-size: 1.4em;
 }
 .about-me > .studies > .item > .topics > .topics-item > span{
     flex-basis: 0;
@@ -717,14 +737,16 @@ i{
 
 .contact-me{
 
-    padding: 5em;
+    padding: 1em;
 }
 .contact-me form{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 50vh;
-    padding: 3em;
+    margin: auto;
+    width: 50vw;
+    padding: 1em;
     box-sizing: border-box;
     border: 1px solid white;
     border-radius: 1em;
@@ -741,17 +763,17 @@ i{
 }
 .contact-me > form label{
     margin-bottom: .8em;
-    font-size: 1.8em;
+    font-size: 1.2em;
     letter-spacing: .5em;
 }
 .contact-me > form input, .contact-me > form textarea{
     min-height: 50px;
     box-sizing: border-box;
-    padding: .2em 2em;
+    padding: 1em 2em;
     border: none;
     border-radius: .4em;
     border-bottom: 1px solid white;
-    font-size: 2em;
+    font-size: 1.2em;
     background-color: rgba(255, 255, 255, 0.019);
 }
 .contact-me > form input:valid, .contact-me > form textarea:valid{
