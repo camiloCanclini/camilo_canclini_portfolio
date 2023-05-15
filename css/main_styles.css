@@ -939,6 +939,9 @@ T A B L E T
     #projects > div > .sections_titles > .sections_t2{
         font-size: 2.2rem;
     }
+    .sections_info-box{
+        padding: 0 .2em;
+    }
     .sections_info-box > .item{
         flex-direction: column;
         min-height: 80vh;
@@ -946,6 +949,9 @@ T A B L E T
     }
     .sections_info-box > .item > *{
         width: 100%;
+    }
+    .sections_info-box > .item > .projects_img-carousel{
+        flex-basis: 400px;
     }   
     .sections_info-box > .item > .projects_img-carousel > button{
         font-size: 6rem;
