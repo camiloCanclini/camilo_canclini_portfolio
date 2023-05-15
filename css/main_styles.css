@@ -340,7 +340,7 @@ svg path{
     display: flex;
     flex-wrap: wrap;
     margin: 1em;
-    min-height: 35vh;
+    min-height: 45vh;
     width: 80%;
     background-color: var(--secondary-color);
     border-radius: 2em;
@@ -357,7 +357,6 @@ svg path{
 .projects_img-carousel{
     position: relative;
     background-color: var(--secondary-color);
-    
     z-index: 1;
 }
 .sections_info-box > .item > .projects_img-carousel > button{
@@ -544,8 +543,20 @@ i{
 .fa-square-js:hover{
     color: yellow;
 }
+.fa-bootstrap:hover{
+    color: violet
+}
+.fa-react:hover{
+    color: lightseagreen;
+}
 .fa-database:hover{
     color: lightsteelblue;
+}
+.fa-database:hover.two{ 
+    color: rgb(84, 129, 15);
+}
+.fa-node:hover{
+    color: greenyellow;
 }
 .fa-php:hover{
     color: powderblue;
@@ -930,7 +941,7 @@ T A B L E T
     }
     .sections_info-box > .item{
         flex-direction: column;
-        min-height: 60vh;
+        min-height: 80vh;
         margin-top: 3rem;
     }
     .sections_info-box > .item > *{
@@ -1146,7 +1157,7 @@ T A B L E T
         margin: 0;
         flex-direction: column;
         width: 100%;
-        min-height: 90vh;
+        min-height: 70vh;
         margin-top: 3em;
     }
     .sections_info-box > .item > *{
