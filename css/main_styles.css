@@ -462,8 +462,14 @@ svg path{
     position: relative;
 }
 .sections_info-box > .item > .texts > .texts-icons > .link-repo{
-    margin-left: auto;
     font-size: 1.4em;
+    transition: .4s scale ease-in-out;
+}
+.sections_info-box > .item > .texts > .texts-icons > .link-repo:hover{
+    scale: 1.08;
+}
+.sections_info-box > .item > .texts > .texts-icons > .link-repo.left{
+    margin-left: auto;
 }
 
 /* E F F E C T S*/
